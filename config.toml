@@ -1,0 +1,38 @@
+# The URL the site will be built for
+base_url = "https://zola-metro.redstoneparadox.xyz"
+
+ignored_content = ["**/data.json"]
+
+# When set to "true", a feed is automatically generated.
+generate_feed = true
+
+taxonomies = [
+    { name = "tags", paginate_by=10 }
+]
+
+# Whether to automatically compile all Sass files in the sass directory
+compile_sass = true
+
+# Whether to build a search index to be used later on by a JavaScript library
+build_search_index = false
+
+[markdown]
+# Whether to do syntax highlighting
+# Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
+highlight_code = true
+
+[extra.nav]
+# Put all your custom variables here
+site = [
+    { name="Home", path="/" },
+    { name="Projects", path="/projects/" },
+    { name="Blog", path="/blog/" },
+    { name="Maven", url="https://maven.redstoneparadox.xyz"}
+]
+
+socials = [
+    { name="Github", url="https://github.com/RedstoneParadox", title="My GitHub Profile" },
+    { name="YouTube", url="https://www.youtube.com/@redstoneparadox", title="My YouTube Channel" },
+    { name="Modrinth", url="https://modrinth.com/user/RedstoneParadox", title="My Modrinth Profile" },
+    { name="Discord", url="https://discord.gg/crZpcjtdJR", title="Join my Discord" },
+]
