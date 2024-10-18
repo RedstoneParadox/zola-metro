@@ -1,0 +1,24 @@
+{%- macro post_preview(post) -%}
+    {%- set url = get_url(path=post.path) -%}
+    <div>
+        <div class="row">
+            <div class="u-pull-left">
+                <h5>{{ post.title }}</h5>
+            </div>
+            <div class="u-pull-right secondary-text-color">
+                <img src="{{ get_url(path='media/CharmPencil.svg') }}" class="inline-icon" alt="Published" /> {{ post.date | date(format="%B %e, %Y") }} <br />
+                <img src="{{ get_url(path='media/CharmClock.svg') }}" class="inline-icon" alt="Read Time" /> {{ post.reading_time }} min read
+            </div>
+        </div>
+        {{ post.description }} <br /> <a href="{{ url }}">Read More →</a><br />
+        <div style="margin-top: 8px;">
+        {%- for name, taxon in post.taxonomies -%}
+            {%- for item in taxon -%}
+            {%- set tag_url = get_taxonomy_url(kind="tags", name=item) -%}
+            <a href="{{ tag_url }}" class="btn tag">#{{ item }}</a>
+            {%- endfor -%}
+        {%- endfor -%}
+        </div>
+        <hr class="small-margins" />
+    </div>
+{%- endmacro post_preview -%}

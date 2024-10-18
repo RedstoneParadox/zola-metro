@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>{%- block title -%}{{ section.title }}{%- endblock title -%}</title>
+  <meta name="description" content="{%- block description -%}{{ section.description }}{%- endblock description -%}">
+  <meta name="author" content="RedstoneParadox">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" type="text/css" href="{{ get_url(path='normalize.css') | safe }}">
+  <link rel="stylesheet" type="text/css" href="{{ get_url(path='skeleton.css') | safe }}">
+  <link rel="stylesheet" type="text/css" href="{{ get_url(path='style.css') }}">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="{{ get_url(path='media/redstone_torch.png') | safe}}">
+
+  <!-- Script
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script type="text/javascript" src="{{ get_url(path='main.js') | safe }}"></script>
+
+  {% block head %}{% endblock head %}
+
+</head>
+<body class="default-theme"> 
+  <script>
+    // Need to do this here to prevent button elements from flashing
+    updateTheme()
+  </script> 
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+{% block body %}
+{% include "partials/header.html" %}
+<div class="container content">
+  {% block content %} {% endblock %}
+</div>
+{% include "partials/footer.html" %}
+{% endblock body %}
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>

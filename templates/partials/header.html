@@ -1,0 +1,23 @@
+<header class="row">
+    <div class="container">
+      <div class="site-name-icon-box u-pull-left">
+        <img src="{{ get_url(path='media/redstone_torch.webp') }}" class="site-icon u-pull-left" alt="">
+        <div class="site-name-box u-pull-left">RedstoneParadox</div>
+      </div>
+      <div class="u-pull-right" style="width: fit-content;">
+        <div class="header-nav u-pull-left">
+          {%- for link in config.extra.nav.site -%}
+          {%- if link.url -%}
+          <a href="{{ link.url }}" class="btn nav-link">{{ link.name }}</a>
+          {%- endif -%}
+          {%- if link.path -%}
+          <a href="{{ get_url(path=link.path) }}" class="btn nav-link">{{ link.name }}</a>
+          {%- endif -%}
+          {%- endfor -%}
+        </div>
+        {%- set light_icon = get_url(path="media/theme/sun-fill.svg") -%}
+        {%- set dark_icon = get_url(path="media/theme/moon-fill.svg") -%}
+        <theme-toggle class="theme-toggle u-pull-right has-button" title="Toggle Theme" light-icon="{{ light_icon }}" dark-icon="{{ dark_icon }}" />
+      </div>
+    </div>
+  </header>

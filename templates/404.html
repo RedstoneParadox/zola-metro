@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block title %}Page not Found{% endblock title %}
+{%- block description -%}Page not Found{%- endblock description -%}
+
+{% block body %}
+<div class="container">
+    <div class="row" style="margin-top: 15%;">
+        <div class="four offset-by-four columns center-align">
+            <div class="secondary-text-color">
+                <h1 style="font-weight: 700;">Error 404</h1>
+            </div>
+            <hr class="small-margins" />
+            <div>
+                Sorry! The page you just tried to access does not exist.
+                I would recommend heading <a href="{{ get_url(path='/') }}">home</a>.
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock body %}
