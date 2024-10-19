@@ -5,15 +5,20 @@ sort_by = "date"
 +++
 
 {% align(align="center") %}
-#### Welcome to my Website!
+# Metro
 {% end %}
 
-I am RedstoneParadox, a hobbyist programmer from a place that hopefully exists.
+Metro is a website theme for the Zola static site generator with a clean and modern look. It was inspired by Duckquill and Abridge, though definitely has a distinct feel from both of them. It was originally developed as my personal website before I decided to spin it off into its own
+thing for other people to use.
 
-I started out modding minecraft way back in 2017 and since then, I've made several mods for a few different games along with a number of other programming projects, including a bit of game dev.
+Some features include:
+- Builtin lightmode/darkmode button
 
-I've also dabbled a bit in making music with tools like VCV Rack.
+## Credits
 
-As you can see, my website is a bit barebones at the moment; come back in the future and there will be more to see here, I promise!
+- [Duckquill](https://codeberg.org/daudix/duckquill) for navbutton, tag button, and social button CSS code.
+- [Skeleton CSS](http://getskeleton.com/); used as part of the site.
 
-In the meantime, my social links are down below and the link to my maven is up top. Thanks for visiting!
+## Websites Using Metro
+
+- [redstoneparadox.xyz](redstoneparadox.xyz)

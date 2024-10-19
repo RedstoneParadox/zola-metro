@@ -1,6 +1,6 @@
 # The URL the site will be built for
 base_url = "https://zola-metro.redstoneparadox.xyz"
-
+title = "Metro"
 ignored_content = ["**/data.json"]
 
 # When set to "true", a feed is automatically generated.
@@ -25,14 +25,9 @@ highlight_code = true
 # Put all your custom variables here
 site = [
     { name="Home", path="/" },
-    { name="Projects", path="/projects/" },
-    { name="Blog", path="/blog/" },
-    { name="Maven", url="https://maven.redstoneparadox.xyz"}
+    { name="Posts", path="/posts/" }
 ]
 
 socials = [
-    { name="Github", url="https://github.com/RedstoneParadox", title="My GitHub Profile" },
-    { name="YouTube", url="https://www.youtube.com/@redstoneparadox", title="My YouTube Channel" },
-    { name="Modrinth", url="https://modrinth.com/user/RedstoneParadox", title="My Modrinth Profile" },
-    { name="Discord", url="https://discord.gg/crZpcjtdJR", title="Join my Discord" },
+    { name="Github", url="https://github.com/RedstoneParadox/zola-metro", title="Repository" },
 ]
