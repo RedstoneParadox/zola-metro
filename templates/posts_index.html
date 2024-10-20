@@ -3,10 +3,7 @@
 
 {% block content %}
 <div class="container">
-    <div class="center-align">
-        <h4>All Blog Posts</h4>
-        <a href="{{ get_url(path='tags') }}">All Tags  →</a>
-    </div>
+    {{ section.content | safe }}
     <hr class="small-margins" />
     {%- for page in paginator.pages -%}
     {{ post::post_preview(post=page) }}
