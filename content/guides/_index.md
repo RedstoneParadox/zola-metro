@@ -1,6 +1,10 @@
 +++
 title="Guides"
-template="index.html"
+template="pages_index.html"
+page_template="page.html"
+paginate_by=10
 +++
 
-[Getting Started](getting_started)
+{% align(align="center") %}
+# Guides
+{% end %}

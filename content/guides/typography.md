@@ -1,10 +1,6 @@
 +++
 title="Typography"
 description="Overview of various typography and formatting shortcodes"
-date=2024-10-29
-
-[taxonomies]
-tags = ["how-to"]
 +++
 
 Metro includes a number of shortcodes to help you format your posts.
