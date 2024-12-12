@@ -1,12 +1,8 @@
-{% extends "base.html" %}
+{% extends "pages_index.html" %}
 {% import "macros/post_preview.html" as post %}
 
-{% block content %}
-<div class="container">
-    {{ section.content | safe }}
-    <hr class="small-margins" />
-    {%- for page in paginator.pages -%}
-    {{ post::post_preview(post=page) }}
-    {%- endfor -%}
-</div>
-{% endblock content %}
+{% block preview %}
+{%- for page in paginator.pages -%}
+{{ post::post_preview(post=page) }}
+{%- endfor -%}
+{% endblock preview %}

@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{%- block title -%}Blog - {{ page.title }}{%- endblock title -%}
+{%- block description -%}{{ page.description }}{%- endblock description -%}
+
+{% block content %}
+<div class="row" >
+  <div class="container">
+    <h1 class="center-align">{{ page.title }}</h1>
+    
+    {% block info %}
+    {% endblock info %}
+    <hr class="small-margins" />
+    {{ page.content | safe }}
+    <hr class="small-margins">
+    {% block bottom %}
+    {% endblock bottom %}
+  </div>
+</div>
+{% endblock content %}

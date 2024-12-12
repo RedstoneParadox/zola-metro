@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% import "macros/post_preview.html" as post %}
+
+{% block content %}
+<div class="container">
+    {{ section.content | safe }}
+    <hr class="small-margins" />
+    {% block preview %}
+    {%- for page in paginator.pages -%}
+    <a href="{{ page.path }}">page.title</a><br />
+    {%- endfor -%}
+    {% endblock preview %}
+</div>
+{% endblock content %}
