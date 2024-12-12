@@ -1,7 +1,7 @@
 <footer class="row">
   <div class="centered">
     <div class="social-icon-box border">
-      {%- set socials = config.extra.nav.socials -%}
+      {%- set socials = config.extra.metro.nav.socials -%}
       {%- for link in socials -%}
       {%- set lowercase_name = link.name | lower -%}
           <a href="{{ link.url }}" class="btn social-link {{ lowercase_name }}" title="{{ link.title }}">
