@@ -1,5 +1,6 @@
 +++
 title="Getting Started"
+weight=0
 +++
 
 This guide will walk you through how to set up Metro for your personal site. Installation instructions for zola themes can be found [here](https://www.getzola.org/documentation/themes/installing-and-using-themes/).

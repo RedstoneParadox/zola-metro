@@ -1,7 +1,6 @@
 +++
 title = "Home" 
 template = "index.html" 
-sort_by = "date"
 +++
 
 {% align(align="center") %}

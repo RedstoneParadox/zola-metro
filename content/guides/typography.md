@@ -1,6 +1,7 @@
 +++
 title="Typography"
 description="Overview of various typography and formatting shortcodes"
+weight=1
 +++
 
 Metro includes a number of shortcodes to help you format your posts.
