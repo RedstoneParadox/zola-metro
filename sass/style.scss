@@ -4,6 +4,15 @@
 @use 'tags';
 @use 'footer';
 @use 'socials';
+@use 'skeleton/grid';
+@use 'skeleton/base';
+@use 'skeleton/typography';
+@use 'skeleton/lists';
+@use 'skeleton/tables';
+@use 'skeleton/spacing';
+@use 'skeleton/utilities';
+@use 'skeleton/misc';
+@use 'skeleton/clearing';
 
 /* Page Setup and Variables */
 html, body {
@@ -43,7 +52,7 @@ code {
 pre > code {
     display: block;
     padding: 1rem 1.5rem;
-    white-space: pre; 
+    white-space: pre;
 }
 
 /* Utils */
