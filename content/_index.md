@@ -13,11 +13,8 @@ thing for other people to use.
 ## Features
 
 - Designed to look good on both desktop and mobile devices
-- Builtin lightmode/darkmode handling button
-- Ability for taxonomy pages to reference other taxonomies
-- Slideshow-style media gallery web component available via shortcode
+- Builtin lightmode/darkmode button
 - Shortcodes for text formatting, columns, etc.
-- No JS mode that removes all JS features.
 
 ## Credits
 
