@@ -50,3 +50,40 @@
 .social-icon-box.centered {
     width: 100%;
 }
+
+/* Larger than tablet */
+@media (min-width: 750px) {
+    .social-icon-box {
+        margin-right: 8px;
+        padding-right: 8px;
+        float: left;
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+    }
+    .social-icon-box.border {
+        border-bottom: 0px solid var(--site-border-color);
+        border-right: 2px solid var(--site-border-color);
+    }
+
+    /* Social Links */
+    .btn.social-link {
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        margin: 2px;
+    }
+    .social-icon {
+        width: 28px;
+        height: 28px;
+        margin: 4px;
+    }
+    .social-icon.rss {
+        width: 20px;
+        height: 20px;
+        margin: 8px;
+    }
+    .social-icon-box {
+        margin-right: 8px;
+        padding-right: 8px;
+    }
+}

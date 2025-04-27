@@ -67,3 +67,86 @@ theme-toggle::part(icon) {
     height: 20px;
     margin-top: 2px;
 }
+
+/* Larger than phablet (also point when grid becomes active) */
+@media (min-width: 550px) {
+    .site-name-icon-box {
+        width: 40%;
+    }
+    .site-name-box{
+        display: block;
+        font-size: large;
+    }
+}
+
+/* Larger than tablet */
+@media (min-width: 750px) {
+    .site-icon {
+        width: 32px;
+        height: 32px;
+    }
+
+    /* Navigation */
+    .header-nav {
+        padding-top: 3px;
+        padding-bottom: 2px;
+        padding-left: 3px;
+        padding-right: 3px;
+        margin-right: 8px;
+    }
+
+    /* Theme Toggle */
+    theme-toggle::part(button) {
+        width: 32px;
+        height: 32px;
+    }
+    theme-toggle::part(icon) {
+        width: 20px;
+        height: 20px;
+        margin-top: 0px;
+    }
+}
+
+@media (min-width: 1000px) {
+    header {
+        height: 40px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+
+    .site-icon {
+        width: 40px;
+        height: 40px;
+    }
+    .site-name-box{
+        font-size: x-large;
+        height: 40px;
+        padding-top: 0px;
+    }
+
+    /* Navigation */
+    .header-nav {
+        padding-top: 6px;
+        padding-bottom: 5px;
+        padding-left: 6px;
+        padding-right: 6px;
+        margin-right: 8px;
+    }
+    .btn.nav-link {
+        font-size: large;
+        padding: 8px;
+        border-radius: 24px;
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+
+    theme-toggle::part(button) {
+        width: 40px;
+        height: 40px;
+    }
+    theme-toggle::part(icon) {
+        width: 24px;
+        height: 24px;
+        margin-top: 3px;
+    }
+}
