@@ -29,6 +29,7 @@ darkmode = true
 # Put all your custom variables here
 site = [
     { name="Home", path="/" },
+    { name="Demo", path="/demo/" },
     { name="Guides", path="/guides/" },
     { name="Posts", path="/posts/" },
 ]
