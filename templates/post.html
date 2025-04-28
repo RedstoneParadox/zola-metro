@@ -19,4 +19,12 @@
   <a href="{{ tag_url }}" class="btn tag">#{{ item }}</a>
   {%- endfor -%}
 {%- endfor -%}
+<br />
+<br />
+{% if page.higher %}
+<a href="{{ get_url(path=page.higher.path) }}" class="btn tag nav-link u-pull-left">← {{ page.higher.title }}</a>
+{% endif %}
+{% if page.lower %}
+<a href="{{ get_url(path=page.lower.path) }}" class="btn tag nav-link u-pull-right">{{ page.lower.title }} →</a>
+{% endif %}
 {% endblock bottom %}
