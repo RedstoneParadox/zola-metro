@@ -30,7 +30,7 @@ darkmode = true
 site = [
     { name="Home", path="/" },
     { name="Demo", path="/demo/" },
-    { name="Guides", path="/guides/" },
+    { name="Guide", path="/guide/" },
     { name="Posts", path="/posts/" },
 ]
 
