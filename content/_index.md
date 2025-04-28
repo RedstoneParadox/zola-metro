@@ -10,16 +10,23 @@ template = "index.html"
 Metro is a website theme for the Zola static site generator with a clean and modern look. It was inspired by Duckquill and Abridge, though definitely has a distinct feel from both of them. It was originally developed as my personal website before I decided to spin it off into its own
 thing for other people to use.
 
+At the moment, this theme is still a heavy work in progress. Feedback and contributions are welcome at the GitHub repository.
+
 ## Features
 
+Implemented:
 - Designed to look good on both desktop and mobile devices
-- Builtin lightmode/darkmode button
-- Shortcodes for text formatting, columns, etc.
+- Optional lightmode/darkmode button
+- Shortcode for text alignment
+
+Planned:
+- Image galleries (carousel and static)
+- Support for non-post style pages
 
 ## Credits
 
-- [Duckquill](https://codeberg.org/daudix/duckquill): Navbutton, tag button, and social button CSS code.
-- [Skeleton CSS](http://getskeleton.com/): Used as part of the site.
+- [Duckquill](https://codeberg.org/daudix/duckquill): Navbutton, tag button, social button CSS code, and general inspiration
+- [Skeleton CSS](http://getskeleton.com/): Partially adapted to use with the theme
 - [Charm Icons](https://github.com/jaynewey/charm-icons); Clock and pencil icons
 
 ## Websites Using Metro
