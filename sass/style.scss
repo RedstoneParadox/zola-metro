@@ -4,6 +4,7 @@
 @use 'tags';
 @use 'footer';
 @use 'socials';
+@use 'code';
 @use 'skeleton/grid';
 @use 'skeleton/base';
 @use 'skeleton/typography';
@@ -40,18 +41,6 @@ hr.small-margins {
     padding: 8px;
     background-color: var(--site-secondary-background-color);
     border-top: solid 2px var(--accent-color);
-}
-code {
-    padding: .2rem .5rem;
-    margin: 0;
-    font-size: 90%;
-    white-space: nowrap;
-    border-top: 2px solid var(--accent-color);
-}
-pre > code {
-    display: block;
-    padding: 1rem 1.5rem;
-    white-space: pre;
 }
 
 /* Utils */
