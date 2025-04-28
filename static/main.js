@@ -24,6 +24,7 @@ function getCookie(cname) {
 // Update the page theme based on the cookie
 function updateTheme() {
   const theme = getCookie("theme");
+  const classList = document.body.classList
 
   console.log(theme)
 
@@ -31,7 +32,7 @@ function updateTheme() {
     // The user does not have a theme cookie, so it needs to be set based on their system theme
     if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
       // Media queries are supported and the user prefers dark mode
-      document.body.classList.add("dark");
+      classList.add("dark");
       setCookie("theme", "dark", 999);
       
     } else {
@@ -40,11 +41,11 @@ function updateTheme() {
     }
   } else if (theme == "dark") {
     // The user has a theme cookie for dark mode
-    document.body.classList.add("dark");
+    classList.add("dark");
   }
 
   // Take over from the media query logic
-  document.body.classList.remove("default-theme");
+  classList.remove("default-theme");
 }
 
 class ThemeToggle extends HTMLElement {

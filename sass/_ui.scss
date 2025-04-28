@@ -34,7 +34,7 @@ a.extern:active:after {
     color: var(--site-secondary-text-color);
     background-color: var(--site-secondary-background-color);
     text-align: center;
-    transition: 0.2s;
+    transition: color 0.2s, box-shadow 0.2s;
     text-decoration: none;
 }
 .has-button::part(button):hover,
