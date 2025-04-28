@@ -41,8 +41,9 @@ header {
     margin-right: 4px;
     height: 28px;
 }
+
 @media (scripting:enabled) {
-    .header-nav {
+    .header-nav.border {
         border-right: 2px solid var(--site-border-color);
     }
 }

@@ -22,6 +22,9 @@ build_search_index = false
 highlight_code = true
 highlight_theme = "material-dark"
 
+[extra.metro]
+darkmode = true
+
 [extra.metro.nav]
 # Put all your custom variables here
 site = [

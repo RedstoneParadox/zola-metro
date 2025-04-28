@@ -4,7 +4,12 @@ description="How to get started with the Metro theme for Zola"
 weight=0
 +++
 
-This guide will walk you through how to set up Metro for your personal site. Installation instructions for zola themes can be found [here](https://www.getzola.org/documentation/themes/installing-and-using-themes/).
+This guide will walk you through how to set up Metro for your personal site. Installation instructions for zola themes can be found [here](https://www.getzola.org/documentation/themes/installing-and-using-themes/). All of Metro's config options fall under the `extra.metro` category and its subcategories - while this naming scheme is contradictory to the zola docs which would prefer suffixing all options with `metro_` under the `extra` category, this method looks nicer.
+
+```toml
+[extra.metro]
+darkmode = true # Whether to show the darkmode/lightmode button
+```
 
 ## Navigation
 
