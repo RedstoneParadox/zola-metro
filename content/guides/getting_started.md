@@ -1,5 +1,6 @@
 +++
 title="Getting Started"
+description="How to get started with the Metro theme for Zola"
 weight=0
 +++
 

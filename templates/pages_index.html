@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% import "macros/post_preview.html" as post %}
+{% import "macros/page_preview.html" as page %}
 
 {% block content %}
 <div class="container">
@@ -7,7 +8,7 @@
     <hr class="small-margins" />
     {% block preview %}
     {%- for page in paginator.pages -%}
-    <a href="{{ page.path }}">{{ page.title }}</a><br />
+    {{ page::page_preview(page=page) }}
     {%- endfor -%}
     {% endblock preview %}
 </div>

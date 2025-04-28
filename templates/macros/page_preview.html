@@ -1,0 +1,20 @@
+{%- macro page_preview(page) -%}
+    {%- set url = get_url(path=page.path) -%}
+    <div>
+        <div class="row">
+            <div class="u-pull-left">
+                <h5>{{ page.title }}</h5>
+            </div>
+        </div>
+        {{ page.description }} <br /> <a href="{{ url }}">Read More →</a><br />
+        <div style="margin-top: 8px;">
+        {%- for name, taxon in page.taxonomies -%}
+            {%- for item in taxon -%}
+            {%- set tag_url = get_taxonomy_url(kind="tags", name=item) -%}
+            <a href="{{ tag_url }}" class="btn tag">#{{ item }}</a>
+            {%- endfor -%}
+        {%- endfor -%}
+        </div>
+        <hr class="small-margins" />
+    </div>
+{%- endmacro page_preview -%}
