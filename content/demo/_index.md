@@ -64,3 +64,9 @@ fn someOtherFunction() {
 {% align(align="center") %} This text is center-aligned! {% end %}
 {% align(align="right") %} This text is right-aligned! {% end %}
 {% align(align="justified") %} This text is justified! Justified text needs to span more than one line for it to actually justify as per the CSS specifications{% end %}
+
+# Tables
+
+| Animal | Type | Description |
+| ----------- | ----------- | ----------- |
+| Duck | Bird | A water fowl with a penchant for blogging |

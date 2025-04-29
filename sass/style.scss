@@ -89,6 +89,12 @@ div.right-border {
     margin-bottom: auto;
 }
 
+:not(pre) :not(code) > table {
+    border-top: 2px solid var(--accent-color);
+    min-width: 100%;
+    background-color: var(--site-secondary-background-color);
+}
+
 /* Media Queries */
 
 /* Larger than phablet (also point when grid becomes active) */
