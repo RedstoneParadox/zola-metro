@@ -6,6 +6,8 @@ ignored_content = ["**/data.json"]
 # When set to "true", a feed is automatically generated.
 generate_feed = true
 
+author = "RedstoneParadox"
+
 taxonomies = [
     { name = "tags", paginate_by=10 }
 ]
