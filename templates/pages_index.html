@@ -12,4 +12,12 @@
     {%- endfor -%}
     {% endblock preview %}
 </div>
+<br />
+<br />
+{% if paginator.previous %}
+<a href="{{ paginator.previous }}" class="btn tag nav-link u-pull-left">← Previous</a>
+{% endif %}
+{% if paginator.next %}
+<a href="{{ paginator.next }}" class="btn tag nav-link u-pull-right">Next →</a>
+{% endif %}
 {% endblock content %}
